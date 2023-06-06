@@ -1,24 +1,9 @@
 import styles from "./style";
-import Billing from "./components";
-import Business from "./components";
-import CardDeal from "./components";
-import Clients from "./components";
-import CTA from "./components";
-import Footer from "./components";
-import Navbar from "./components";
-import Stats from "./components";
-import Testimonials from "./components";
-import Hero from "./components";
-import { Route, Routes } from "react-router-dom";
+import {Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
 
 const App = () => {
 
 return(
-<>
-
-<Routes>
-    <Route path="/123" element={<Hero/>}/>
-</Routes>
 
   <div className="bg-primary w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -46,8 +31,6 @@ return(
       </div>
     </div>
   </div>
-
-  </>
   )
 }
 
