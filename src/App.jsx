@@ -1,7 +1,25 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "C:/Users/Ace/Desktop/bank_modern_app/bank_moder_app/src/componets";
+import Billing from "./components";
+import Business from "./components";
+import CardDeal from "./components";
+import Clients from "./components";
+import CTA from "./components";
+import Footer from "./components";
+import Navbar from "./components";
+import Stats from "./components";
+import Testimonials from "./components";
+import Hero from "./components";
+import { Route, Routes } from "react-router-dom";
 
-const App = () => (
+const App = () => {
+
+return(
+<>
+
+<Routes>
+    <Route path="/123" element={<Hero/>}/>
+</Routes>
+
   <div className="bg-primary w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
@@ -28,6 +46,9 @@ const App = () => (
       </div>
     </div>
   </div>
-);
+
+  </>
+  )
+}
 
 export default App;
